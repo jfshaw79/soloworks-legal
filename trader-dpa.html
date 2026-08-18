@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Processing Agreement — tradeflow</title>
+<style>
+  :root {
+    --brand: #1DB87A;
+    --text: #1A1A1A;
+    --muted: #6B7280;
+    --bg: #F7F7F5;
+    --border: #F2F2EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .wordmark {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .wordmark .flow { color: var(--brand); }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 24px 0 4px;
+    letter-spacing: -0.3px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  h2:first-child { margin-top: 0; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul { padding-left: 20px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .todo {
+    background: rgba(245,166,35,0.12);
+    color: #A9690A;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .draft-notice {
+    background: rgba(59,130,246,0.08);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 13.5px;
+    color: #1D4ED8;
+    margin-bottom: 32px;
+  }
+  .version {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">trade<span class="flow">flow</span></div>
+    <h1>Data Processing Agreement</h1>
+    <div class="updated">For traders using tradeflow</div>
+  </header>
+
+  <div class="draft-notice">
+    This is a draft document pending legal review. Placeholders in <span class="todo">orange</span> need to be completed before this is relied upon for real traders.
+  </div>
+
+  <div class="card">
+    <p><strong>Between:</strong> StarTek Systems Ltd ("Processor," "we," "us") and the trader using tradeflow ("Controller," "you")</p>
+
+    <h2>1. Purpose</h2>
+    <p>This Data Processing Agreement ("DPA") governs the processing of personal data belonging to your clients ("Client Data") that you enter into or generate through the tradeflow app. It supplements tradeflow's <a href="#">Terms of Service</a>.</p>
+
+    <h2>2. Roles of the parties</h2>
+    <ul>
+      <li><strong>You are the Data Controller</strong> of your Client Data. You decide what client information to collect, and you are responsible for having a lawful basis to collect and process it, and for meeting your own obligations to your clients under UK GDPR.</li>
+      <li><strong>We (StarTek Systems Ltd) are the Data Processor.</strong> We process Client Data only on your instructions, as set out in this DPA and as necessary to provide the tradeflow service to you.</li>
+    </ul>
+
+    <h2>3. What data this covers</h2>
+    <p>Client Data processed through tradeflow may include: client names, phone numbers, email addresses, pet details (name, breed, size), appointment history, service records, and payment/invoice records — whatever you choose to enter into the app in the ordinary course of using it.</p>
+
+    <h2>4. Our obligations as Processor</h2>
+    <p>We will:</p>
+    <ul>
+      <li>Process Client Data only on your documented instructions (i.e., as directed by your use of the app's normal functionality)</li>
+      <li>Ensure our staff/systems accessing Client Data are subject to confidentiality obligations</li>
+      <li>Implement appropriate technical and organisational security measures to protect Client Data, including encryption in transit and at rest, and access controls that keep your data isolated from other traders using tradeflow (via database-level Row Level Security)</li>
+      <li>Not sell or use Client Data for any purpose other than providing you the tradeflow service</li>
+      <li>Assist you, where reasonably possible, in responding to requests from your clients to exercise their data protection rights (access, correction, deletion, etc.)</li>
+      <li>Notify you without undue delay if we become aware of a personal data breach affecting Client Data</li>
+      <li>Delete or return Client Data at the end of our relationship, at your request, within <span class="todo">[DEFINE, e.g. 30 days]</span></li>
+      <li>Not engage a new sub-processor without informing you in advance</li>
+    </ul>
+
+    <h2>5. Sub-processors</h2>
+    <table>
+      <tr><th>Sub-processor</th><th>Purpose</th><th>Location</th></tr>
+      <tr><td>Supabase</td><td>Database hosting, authentication</td><td>UK/EU (London)</td></tr>
+      <tr><td>Stripe <span class="todo">(once live)</span></td><td>Payment processing</td><td><span class="todo">[TBD]</span></td></tr>
+      <tr><td>360dialog / Twilio <span class="todo">(once live)</span></td><td>WhatsApp Business messaging</td><td><span class="todo">[TBD]</span></td></tr>
+    </table>
+    <p>We will notify you if this list changes materially.</p>
+
+    <h2>6. Your obligations as Controller</h2>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>Having a lawful basis to collect and process your clients' personal data (e.g. their consent, or your legitimate business interest in providing services to them)</li>
+      <li>Providing your clients with appropriate privacy information about how their data is used</li>
+      <li>Only entering accurate, necessary data into the app</li>
+      <li>Responding to your clients' data protection requests (we'll assist where we can, per section 4, but you are responsible for the response)</li>
+    </ul>
+
+    <h2>7. Data location</h2>
+    <p>Client Data is stored in a UK/EU data region and is not transferred outside the UK/EU except as described in our sub-processor list above.</p>
+
+    <h2>8. Security incidents</h2>
+    <p>If we become aware of a security incident affecting Client Data, we will notify you within <span class="todo">[DEFINE, e.g. 72 hours]</span> with what we know at the time, and keep you updated as our understanding develops.</p>
+
+    <h2>9. Term</h2>
+    <p>This DPA applies for as long as you use tradeflow and hold Client Data through it.</p>
+
+    <h2>10. Acceptance</h2>
+    <p>By creating a tradeflow account and using the app to manage client data, you accept the terms of this DPA.</p>
+
+    <div class="version">Version 1.0 — Effective date: <span class="todo">[DATE]</span></div>
+  </div>
+
+  <footer>tradeflow is a product of StarTek Systems Ltd</footer>
+</div>
+</body>
+</html>

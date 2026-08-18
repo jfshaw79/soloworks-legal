@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — tradeflow</title>
+<style>
+  :root {
+    --brand: #1DB87A;
+    --text: #1A1A1A;
+    --muted: #6B7280;
+    --bg: #F7F7F5;
+    --border: #F2F2EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .wordmark {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .wordmark .flow { color: var(--brand); }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 24px 0 4px;
+    letter-spacing: -0.3px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.05);
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  h2:first-child { margin-top: 0; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul { padding-left: 20px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .todo {
+    background: rgba(245,166,35,0.12);
+    color: #A9690A;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .draft-notice {
+    background: rgba(59,130,246,0.08);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 13.5px;
+    color: #1D4ED8;
+    margin-bottom: 32px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">trade<span class="flow">flow</span></div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: <span class="todo">[DATE]</span></div>
+  </header>
+
+  <div class="draft-notice">
+    This is a draft document pending legal review. Placeholders in <span class="todo">orange</span> need to be completed before this is relied upon for real traders.
+  </div>
+
+  <div class="card">
+    <p>This policy explains how StarTek Systems Ltd ("we," "us," "StarTek Systems") handles personal data in connection with the tradeflow app.</p>
+
+    <h2>1. Who we are</h2>
+    <p>tradeflow is operated by StarTek Systems Ltd, a company registered in <span class="todo">[England and Wales / relevant jurisdiction]</span>, company number <span class="todo">[NUMBER]</span>, registered address <span class="todo">[ADDRESS]</span>. You can contact us about privacy matters at <span class="todo">[PRIVACY EMAIL]</span>.</p>
+
+    <h2>2. Two kinds of data, two roles</h2>
+    <p>tradeflow involves two categories of personal data, and StarTek Systems plays a different role for each:</p>
+    <p><strong>Your data, as a trader.</strong> When you sign up for tradeflow, we collect your name, email address, and business details. For this data, <strong>StarTek Systems is the data controller</strong> — we decide how and why it's processed, and this policy explains that directly to you.</p>
+    <p><strong>Your clients' data, which you enter into the app.</strong> As a trader using tradeflow, you enter your own clients' details — names, contact information, pet details, appointment history, and payment records. For this data, <strong>you (the trader) are the data controller</strong>, and <strong>StarTek Systems acts only as a data processor</strong>, handling that data on your instructions and for the purpose of providing you the app. Our relationship with you regarding this data is governed by a separate <a href="./trader-dpa.html">Data Processing Agreement</a>, not this policy. If you're a trader's client and have questions about how your personal data is used, please contact the trader directly — they control that data, not us.</p>
+
+    <h2>3. What we collect</h2>
+    <p><strong>About you (the trader):</strong></p>
+    <ul>
+      <li>Name, email address, password (encrypted)</li>
+      <li>Business name, trade, address, business phone/email</li>
+      <li>Any data you enter about your own business setup (working hours, pricing, etc.)</li>
+    </ul>
+    <p><strong>Entered by you, about your clients (processed on your behalf, per the DPA):</strong></p>
+    <ul>
+      <li>Client names, phone numbers, email addresses</li>
+      <li>Pet details (name, breed, size), where relevant to your trade</li>
+      <li>Appointment history, service records, payment/invoice records</li>
+    </ul>
+    <p>We do not access, use, or share your clients' data for any purpose beyond providing you the tradeflow service.</p>
+
+    <h2>4. Where your data is stored</h2>
+    <p>All data is stored with our infrastructure provider, Supabase, in a UK/EU data region (London). Supabase acts as a sub-processor to StarTek Systems. You can view Supabase's own Data Processing Agreement at <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">supabase.com/legal/dpa</a>.</p>
+
+    <h2>5. What we use your data for</h2>
+    <ul>
+      <li>Providing and operating the tradeflow app</li>
+      <li>Authenticating your account and keeping your data secure and isolated from other traders</li>
+      <li>Communicating with you about your account or the service</li>
+      <li>Once built: processing payments via Stripe, and sending messages to your clients via WhatsApp Business, both only with your active configuration</li>
+    </ul>
+    <p>We do not sell your data, or your clients' data, to any third party. We do not use your data for advertising.</p>
+
+    <h2>6. How long we keep data</h2>
+    <p>We keep your data for as long as your account is active. If you delete your account, <span class="todo">[DEFINE RETENTION PERIOD]</span>.</p>
+
+    <h2>7. Your rights</h2>
+    <p>Under UK GDPR, you have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Correct inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Object to or restrict certain processing</li>
+      <li>Request a copy of your data in a portable format</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <span class="todo">[PRIVACY EMAIL]</span>.</p>
+
+    <h2>8. Third parties / sub-processors</h2>
+    <table>
+      <tr><th>Sub-processor</th><th>Purpose</th></tr>
+      <tr><td>Supabase</td><td>Hosting, database, authentication (UK/EU region)</td></tr>
+      <tr><td>Stripe <span class="todo">(once built)</span></td><td>Payment processing</td></tr>
+      <tr><td>WhatsApp Business API <span class="todo">(once built)</span></td><td>Client messaging via 360dialog or Twilio</td></tr>
+    </table>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy from time to time. We'll notify you of material changes via the app or email.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this policy or your data: <span class="todo">[PRIVACY EMAIL]</span></p>
+  </div>
+
+  <footer>tradeflow is a product of StarTek Systems Ltd</footer>
+</div>
+</body>
+</html>
